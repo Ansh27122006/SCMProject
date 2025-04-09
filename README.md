@@ -1,1 +1,1 @@
-# School_Management
+# SCM PROJECT
