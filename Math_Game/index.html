@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Math Quiz Game</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Start Screen -->
+  <div id="start-screen" class="start-container">
+    <h1>🎯 Welcome to Math Quiz!</h1>
+    <p>Sharpen your brain with quick math questions.</p>
+
+    <!-- Difficulty Buttons -->
+    <div class="difficulty-select">
+      <button class="difficulty-btn" data-difficulty="easy">Easy</button>
+      <button class="difficulty-btn" data-difficulty="medium">Medium</button>
+      <button class="difficulty-btn" data-difficulty="hard">Hard</button>
+    </div>
+
+    <!-- Start Game -->
+    <button id="start-btn" class="disabled" disabled>Start Game</button>
+  </div>
+
+  <!-- Game Screen -->
+  <div id="game-screen" style="display: none;">
+    <div class="game-container">
+      <h1>Math Quiz Game</h1>
+
+      <div id="timer" class="timer">Time Left: 30s</div>
+      <div id="question">Loading...</div>
+      <div id="options"></div>
+      <div id="score">Score: 0</div>
+      <div id="high-score">High Score: 0</div>
+
+      <!--  New: Quit Button -->
+      <button id="quit-btn" class="quit-btn">Quit</button>
+
+      <!--  New: Congrats Message -->
+      <div id="congrats-popup" class="congrats-popup" style="display:none;"></div>
+
+      <!-- Game Over Section -->
+      <div id="game-over" class="game-over" style="display:none;">
+        <h2>Game Over!</h2>
+        <p id="final-score"></p>
+
+        <!-- New: Play Again to go to welcome screen -->
+        <button id="play-again-btn">Play Again</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
